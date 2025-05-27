@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f2e8cf;
+}
+
+.container{
+    width: 400px;
+    border: solid 10px #6a994e;
+    border-radius: 3.5%;
+    background-color: #a7c957;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.task-text.completed{
+    text-decoration: line-through;
+}
