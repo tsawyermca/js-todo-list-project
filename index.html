@@ -8,12 +8,24 @@
 </head>
 <body>
     <div class="container">
+        <h2>To-Do List</h2>
+        <p id="currentDate"></p>
         <div class="textInput">
-            <h2>To-Do List</h2>
-            <input type="text" id="taskInput" placeholder="Enter a Task Here">
+            <input type="text" id="taskInput" placeholder="Enter a task here">
             <button onclick="addTask()">Add Task</button>
         </div>
-        <ol id="taskList"></ol>
+        <div class="filterTasks">
+            <button class="filterBtn active" onclick="filterTasks('all')">All Tasks</button>
+            <button class="filterBtn" onclick="filterTasks('completed')">Completed Tasks</button>
+            <button class="filterBtn" onclick="filterTasks('incomplete')">Incomplete Tasks</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button id="togglePastLists" onclick="togglePastLists()">Show Past Lists</button>
+        <div id="pastLists" class="pastLists">
+            <!-- Not enough time to test if this works properly but hopefully it does -->
+            <h3>Past Lists</h3>
+            <div id="pastListsContainer"></div>
+        </div>
     </div>
     <script src="./js/app.js"></script>
 </body>
